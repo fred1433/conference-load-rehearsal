@@ -12,6 +12,19 @@ export function closeFailedCountsAsMissing(r) {
   return { ...r, current_within_5s: 0, missing_at_5s: r.intended_recipients, delivery: { p50_ms: 'never', p95_ms: 'never', max_ms: 'never' }, via: {} };
 }
 
+// What each real browser saw of each round. A round whose close was refused or
+// failed published nothing: it is 'not_published', never a latency measured
+// against the previous round's version (which would come out negative).
+export function browserRounds(browsers, closes) {
+  return browsers.map((b) => ({ role: b.role, path: b.path,
+    rounds: closes.map((c) => {
+      if (!c.ok || c.final_version == null) return { round: c.round, ms: 'not_published' };
+      const r = b.receipts.find((x) => x.version >= c.final_version);
+      return { round: c.round, ms: r ? ms(r.t - c.start) : 'never' };
+    }),
+    status_changes: b.status.length }));
+}
+
 export function evaluate({ cfg, devices, opens, closes, cut, refreshAt, clock, db, browsers, samples, endAt }) {
   const participants = devices.filter((d) => d.role === 'participant');
   const subscribers = devices.filter((d) => d.subscriber);
@@ -150,9 +163,7 @@ export function evaluate({ cfg, devices, opens, closes, cut, refreshAt, clock, d
   // Browsers
   let browserOut = null;
   if (browsers) {
-    browserOut = browsers.map((b) => ({ role: b.role, path: b.path,
-      rounds: closes.map((c) => { const r = b.receipts.find((x) => x.version >= c.final_version); return { round: c.round, ms: r ? ms(r.t - c.start) : 'never' }; }),
-      status_changes: b.status.length }));
+    browserOut = browserRounds(browsers, closes);
   }
 
   const normalRounds = rounds.filter((r) => !r.cut);

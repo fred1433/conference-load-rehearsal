@@ -1,23 +1,24 @@
-// Regenerates every figure in README.md (between markers), REPORT.md tables,
+// Regenerates every figure in README.md, REPORT.md and FINDINGS.md (between markers),
 // results/SUMMARY.md and results/timeline.svg from the recorded runs.
 import fs from 'node:fs';
 import path from 'node:path';
 import zlib from 'node:zlib';
 import { ROOT, writeJson } from './common.mjs';
-import { closeFailedCountsAsMissing } from './evaluate.mjs';
+import { closeFailedCountsAsMissing, browserRounds } from './evaluate.mjs';
 
 // Runs recorded before two evaluation fixes are brought up to the current rule
 // here, from their own evidence, and the summary.json is rewritten once:
 // a round whose close was refused or failed counts every screen as missing,
-// and the facilitator's open attempts are copied from devices.json.gz.
+// the facilitator's open attempts are copied from devices.json.gz, and the real
+// browsers' rounds are recomputed from their recorded receipts (a round that was
+// never published is 'not_published', not a latency against an older version).
 function upgrade(dir, s) {
   const before = JSON.stringify(s);
   s.outcomes.rounds = s.outcomes.rounds.map(closeFailedCountsAsMissing);
-  if (!s.outcomes.opens) {
-    const gz = path.join(runsDir, dir, 'devices.json.gz');
-    const raw = JSON.parse(zlib.gunzipSync(fs.readFileSync(gz)));
-    s.outcomes.opens = raw.opens.map((o) => ({ round: o.round, ok: o.ok, attempts: o.attempts, error: o.error }));
-  }
+  let raw = null;
+  const load = () => (raw ??= JSON.parse(zlib.gunzipSync(fs.readFileSync(path.join(runsDir, dir, 'devices.json.gz')))));
+  if (!s.outcomes.opens) s.outcomes.opens = load().opens.map((o) => ({ round: o.round, ok: o.ok, attempts: o.attempts, error: o.error }));
+  if (s.outcomes.browsers) s.outcomes.browsers = browserRounds(load().browsers, load().closes);
   if (JSON.stringify(s) !== before) writeJson(path.join(runsDir, dir, 'summary.json'), s);
   return s;
 }
@@ -58,11 +59,13 @@ function sessionHealth(rs) {
   const closeSlow = rs.filter((s) => s.outcomes.rounds.some((r) => r.close_ok && typeof r.close_ms === 'number' && r.close_ms > 5000));
   const unacked = rs.map((s) => s.outcomes.submitted.unacknowledged);
   const withUnacked = unacked.filter((n) => n > 0);
-  const notOpen = rs.map((s) => s.outcomes.submitted.rejected.round_not_open || 0).filter((n) => n > 0);
+  const notOpenRs = rs.filter((s) => (s.outcomes.submitted.rejected.round_not_open || 0) > 0);
+  const notOpen = notOpenRs.map((s) => s.outcomes.submitted.rejected.round_not_open);
+  const notOpenWithinUnacked = notOpenRs.every((s) => s.outcomes.submitted.unacknowledged > 0);
   return { n: rs.length, openFailed, openTimedOut, closeFailed, closeSlow: closeSlow.length,
     closeSlowS: closeSlow.length ? Math.round(Math.max(...closeSlow.flatMap((s) => s.outcomes.rounds.filter((r) => r.close_ok && r.close_ms > 5000).map((r) => r.close_ms))) / 1000) : null,
     withUnacked: withUnacked.length, unackedRange: withUnacked.length ? spread(withUnacked) : '0', intended: rs[0]?.outcomes.submitted.intended,
-    notOpen: notOpen.length ? spread(notOpen) : null, broken: openFailed + closeFailed + withUnacked.length > 0 };
+    notOpen: notOpen.length ? spread(notOpen) : null, notOpenRuns: notOpenRs.length, notOpenWithinUnacked, broken: openFailed + closeFailed + withUnacked.length > 0 };
 }
 const yes = (b) => (b === true ? 'met' : b === false ? 'missed' : 'n/a');
 
@@ -120,25 +123,32 @@ ${t.join('\n')}
 Measured ${new Date(Math.max(...all.map((s) => Date.parse(s.run.started_at)))).toISOString().slice(0, 10)} on ${machineLabel()}. Medians, with the range across repetitions in brackets; "a to b of n" is the range across runs. Full per-run table: [results/SUMMARY.md](results/SUMMARY.md).`;
 }
 
-// Three sentences for a reader who wants to know whether 200 devices hold.
+// The short answer: a two-sentence conclusion, the assumption that most changes
+// the load, and three findings. Shared by README.md and REPORT.md.
 function plain() {
   const conf = byName('conference'), raised = byName('conference-raised');
   const cuts = [...byName('recovery'), ...byName('recovery-heartbeat-5s')];
   const authF = path.join(ROOT, 'results', 'auth', 'summary.json');
-  const lines = ['**Do 200 devices hold?** On this local bench:', ''];
+  const lines = [];
+  if (raised.length && cuts.length) {
+    const h = sessionHealth(cuts);
+    const clean = raised.every((s) => s.outcomes.targets.all_screens_final_within_5s && s.outcomes.targets.zero_lost_acknowledged_decisions);
+    lines.push(`**Do 200 devices hold?** On this local bench, with existing sessions and raised Realtime limits, ${raised[0].actors.participant_devices} participants ${clean ? 'completed normal rounds' : 'did not complete normal rounds'}; after a simulated ${cuts[0].config.cutSeconds}-second outage, the facilitator could not open round 3 in ${h.openFailed} of ${h.n} runs while the local API gateway saturated. These are scenarios to rehearse before an event; hosted capacity still needs a representative test of the real sign-in, submission and result-display flows.`, '');
+  }
+  lines.push('This reference scenario sends live results to every participant device; who receives updates during the real session still needs confirming.', '');
   if (conf.length && raised.length) {
     const refused = spread(conf.map((s) => s.outcomes.joined.intended - s.outcomes.joined.ready));
-    lines.push(`- **Connections.** A room of 200 phones plus the facilitator, the display and two real browsers needs ${conf[0].actors.realtime_connections} live connections. With the connection limit of the Free plan (200), ${refused} screens were refused and never saw a result; with the limit raised, every screen got every result within 5 s and no acknowledged decision was lost.`);
+    lines.push(`- **Connections.** ${conf[0].actors.realtime_connections} live connections are needed (200 phones, facilitator, display, two real browsers). At the Free plan's limit of 200, ${refused} screens were refused; with it raised, every screen got every result within 5 s.`);
   }
   if (fs.existsSync(authF)) {
     const a = JSON.parse(fs.readFileSync(authF, 'utf8')).results;
     const anon = a.find((r) => r.path === 'fresh-anonymous' && r.grouping === 'one-venue-ip');
     const reuse = a.find((r) => r.path === 'reuse' && r.grouping === 'one-venue-ip');
-    lines.push(`- **Signing in on arrival.** If every phone creates an account or logs in when it arrives, from the venue's one public address, Auth's per-address limits turn most of them away (${anon.ok} of 200 new anonymous users got through); phones that reuse a session they already hold all got in (${reuse.ok} of 200).`);
+    lines.push(`- **Signing in on arrival.** From one venue address, Auth's per-address limits let ${anon.ok} of 200 new anonymous users through; reused sessions: ${reuse.ok} of 200.`);
   }
   if (cuts.length) {
     const h = sessionHealth(cuts);
-    lines.push(`- **After a Wi-Fi drop.** When the venue link went silent for 20 s and came back, every phone reconnected at once and the facilitator could not start round 3 in ${h.openFailed} of ${h.n} runs. That jam formed in the local stack's API gateway (one worker, 512 connections), so it says nothing yet about a hosted project: this is the scenario to repeat on a representative deployment before relying on it.`);
+    lines.push(`- **After a Wi-Fi drop.** After a simulated ${cuts[0].config.cutSeconds}-second outage that left old connections stale, clients attempted to reconnect. The facilitator could not start round 3 in ${h.openFailed} of ${h.n} runs; the jam formed in the local API gateway, so this scenario needs repeating on a representative deployment.`);
   }
   return lines.join('\n');
 }
@@ -193,7 +203,7 @@ function soak() {
   const o = s.outcomes;
   const worst = minCurrent(s);
   return `${s.config.rounds} rounds over ${Math.round(s.run.duration_s / 60)} min, ${o.joined.intended} clients: ${o.joined.ready} ready, ${o.submitted.lost_acknowledged} acknowledged decisions lost, submit p95 ${fmtMs(o.submitted.latency_from_planned.p95_ms)}, worst round ${worst}/${o.rounds[0].intended_recipients} current within 5 s, generator RSS max ${o.generator.rss_max_mb} MB, Realtime memory max ${o.host.containers.realtime?.mem_max_mb ?? 'n/a'} MB. `
-    + `The soak does not cross token expiry (JWT lifetime ${(s.environment.auth_env.find((l) => l.startsWith('GOTRUE_JWT_EXP=')) || '=?').split('=')[1]} s), so a targeted refresh phase runs before the last round: `
+    + `The soak does not cross token expiry (JWT lifetime ${(s.environment.auth_env.find((l) => l.startsWith('GOTRUE_JWT_EXP=')) || '=?').split('=')[1]} s): token expiry was not exercised. A separate burst of single-attempt token refreshes runs before the last round: `
     + (o.refresh ? `${o.refresh.ok}/${o.refresh.attempted} refreshes succeeded at the same instant, each tried once with no retry (${Object.entries(o.refresh.errors).map(([k, v]) => `${k.replace(/^0 /, '')} x${v}`).join(', ') || 'no errors'}), ${o.refresh.realtime_token_updated} Realtime tokens updated in band, and the last round reached ${o.rounds.at(-1).current_within_5s}/${o.rounds.at(-1).intended_recipients} screens within 5 s.` : 'not recorded.');
 }
 
@@ -327,8 +337,8 @@ function finding() {
     const via = rec.reduce((m, s) => { for (const [k, v] of Object.entries(s.outcomes.recovery.recovered_via)) m[k] = (m[k] || 0) + v; return m; }, {});
     const total = sum(Object.values(via));
     const opensTimedOut = cuts.filter((s) => s.outcomes.opens.some((o) => !o.ok && o.error === 'timeout') && !s.outcomes.rounds.some((r) => r.close_status === 'rejected')).length;
-    let t = `3. **After a silent cut, the facilitator was blocked.** The venue link went silent for ${rec[0].config.cutSeconds} s as round 1 closed (old connections left open, as when an access point loses its state), then came back. What the rehearsal found first is that the session itself broke. Across the ${h.n} cut runs (${rec.length} with the client library's 25 s heartbeat, ${hb.length} with 5 s): the facilitator could not open round 3 in ${h.openFailed} (\`upstream_unreachable\`)${opensTimedOut ? `, and in ${opensTimedOut} more its open request timed out although the round did open` : ''}; the round 2 close failed in ${h.closeFailed} and took ${h.closeSlowS} s in ${h.closeSlow} more; in ${h.withUnacked} of ${h.n} runs, ${h.unackedRange} of ${h.intended} decisions were never acknowledged${h.notOpen ? `, and ${h.notOpen} more per run were refused because round 3 did not exist` : ''}. No acknowledged decision was lost. The facilitator is on the wired path, not the cut link, but its requests go through the same local API gateway as the reconnecting phones: that gateway (Kong in the CLI stack: 1 worker, 512 connections) logged \`worker_connections are not enough\` ${range(cuts.map(gw), (x) => String(x))} times per run along with HTTP 500/503, while the old connections still held its slots. That is a ceiling of the CLI's local gateway, not a hosted Supabase figure; the question it raises for any deployment is what happens to the facilitator's actions when every phone reconnects at once.`;
-    t += ` The phones themselves: within 30 s of the link returning, ${counts(rec.map((s) => s.outcomes.recovery.current_within_30s), 200)} venue clients held the current result with the default heartbeat; p95 time to get there: ${range(rec.map((s) => s.outcomes.recovery.time_to_current.p95_ms))}. The client library noticed the dead sockets through its heartbeat (25 s by default [18]). Postgres was not the bottleneck: at most ${Math.max(...cuts.map((s) => s.outcomes.host.db_sessions?.total_max ?? 0))} client sessions out of 100, ${Math.max(...cuts.map((s) => s.outcomes.host.db_sessions?.active_max ?? 0))} active. ${via.recover ?? 0} of ${total} recovered clients got the missed result from the state fetch they make after rejoining, not from Realtime: without that fetch they would have stayed on the old result until the next round.`;
+    let t = `3. **After a silent cut, the facilitator was blocked.** The venue link went silent for ${rec[0].config.cutSeconds} s as round 1 closed (old connections left open, as when an access point loses its state), then came back. What the rehearsal found first is that the session itself broke. Across the ${h.n} cut runs (${rec.length} with the client library's 25 s heartbeat, ${hb.length} with 5 s): the facilitator could not open round 3 in ${h.openFailed} (\`upstream_unreachable\`)${opensTimedOut ? `, and in ${opensTimedOut} more its open request timed out although the round did open` : ''}; the round 2 close failed in ${h.closeFailed} and took ${h.closeSlowS} s in ${h.closeSlow} more; in ${h.withUnacked} of ${h.n} runs, ${h.unackedRange} of ${h.intended} decisions were never acknowledged.${h.notOpen ? ` In ${h.notOpenRuns} ${h.notOpenWithinUnacked ? 'of those runs' : 'runs'}, another ${h.notOpen} decisions were rejected because round 3 had never opened.` : ''} No acknowledged decision was lost. The facilitator is on the wired path, not the cut link, but its requests go through the same local API gateway as the reconnecting phones: that gateway (Kong in the CLI stack: 1 worker, 512 connections) logged \`worker_connections are not enough\` ${spread(cuts.map(gw))} times per run along with HTTP 500/503, while the old connections still held its slots. That is a ceiling of the CLI's local gateway, not a hosted Supabase figure; the question it raises for any deployment is what happens to the facilitator's actions while the room reconnects.`;
+    t += ` The phones themselves: within 30 s of the link returning, ${counts(rec.map((s) => s.outcomes.recovery.current_within_30s), 200)} venue clients held the current result with the default heartbeat; p95 time to get there: ${range(rec.map((s) => s.outcomes.recovery.time_to_current.p95_ms))}. The client library noticed the dead sockets through its heartbeat (25 s by default [18]). Postgres was not the bottleneck: at most ${Math.max(...cuts.map((s) => s.outcomes.host.db_sessions?.total_max ?? 0))} client sessions out of 100, ${Math.max(...cuts.map((s) => s.outcomes.host.db_sessions?.active_max ?? 0))} active. Across the ${rec.length} default-heartbeat runs, ${via.recover ?? 0} of ${total} clients first caught up through the state fetch after rejoining.`;
     if (hb.length) t += ` A 5 s client heartbeat instead of 25 s (${hb.length} runs, without the 2 real browsers) did not help: ${counts(hb.map((s) => s.outcomes.recovery.current_within_30s), 200)} within 30 s, because the clients detected the cut early and tried to reconnect while the link was still down (${range(hb.map((s) => s.outcomes.recovery.link?.refusedDuringCut ?? 0), (x) => String(x))} attempts refused per run), then came back on the library's retry schedule [18] into the same congested gateway.`;
     if (storm.length) {
       const hs = sessionHealth(storm);
@@ -345,15 +355,22 @@ function finding() {
   }
   const allRuns = all;
   const unackRuns = allRuns.filter((s) => s.outcomes.submitted.unacknowledged > 0);
-  out.push(`\nAcross all ${allRuns.length} runs: ${sum(allRuns.map((s) => s.outcomes.submitted.lost_acknowledged))} acknowledged decisions lost; ${sum(allRuns.map((s) => s.outcomes.submitted.unacknowledged))} decisions never acknowledged, all in ${unackRuns.length} runs where the local gateway was saturated (${unackRuns.map((s) => s.run.label).join(', ')}); ${sum(allRuns.map((s) => s.outcomes.submitted.rejected.round_not_open || 0))} refused because their round was never opened; ${allRuns.filter((s) => !s.outcomes.score_check_ok).length} runs with a score that did not match the stored decisions; ${sum(allRuns.map((s) => s.outcomes.submitted.duplicate_acks))} retried submissions answered as duplicates and stored once.` + (bc.length && raised.length ? ` Broadcast from the database delivered the final result with a worst-round p95 of ${range(bc.map(worstDelivery))} against ${range(raised.map(worstDelivery))} for Postgres Changes, to the same ${raised[0].outcomes.rounds[0].intended_recipients} measured screens with the same payload and authorization (the Postgres Changes reference also carried ${raised[0].config.browsers} real browsers, the Broadcast runs ${bc[0].config.browsers}).` : '') + (every.length ? ` Publishing after every decision (${every.length} runs) still met the 5 s target, and no message-rate limit was logged, at raised or seeded limits; the per-second figure is averaged by the server [16], so this does not predict a hosted project's behaviour.` : ''));
+  out.push(`\nAcross all ${allRuns.length} runs: ${sum(allRuns.map((s) => s.outcomes.submitted.lost_acknowledged))} acknowledged decisions lost; ${sum(allRuns.map((s) => s.outcomes.submitted.unacknowledged))} decisions never acknowledged, all in ${unackRuns.length} runs where the local gateway was saturated (${unackRuns.map((s) => s.run.label).join(', ')}); ${sum(allRuns.map((s) => s.outcomes.submitted.rejected.round_not_open || 0))} refused because their round was never opened; ${allRuns.filter((s) => !s.outcomes.score_check_ok).length} runs with a score that did not match the stored decisions; ${sum(allRuns.map((s) => s.outcomes.submitted.duplicate_acks))} retried submissions answered as duplicates and stored once.` + (bc.length && raised.length ? ` Broadcast from the database delivered the final result with a worst-round p95 of ${range(bc.map(worstDelivery))} against ${range(raised.map(worstDelivery))} for Postgres Changes, to the same ${raised[0].outcomes.rounds[0].intended_recipients} measured screens with the same payload and authorization (the Postgres Changes reference also carried ${raised[0].config.browsers} real browsers, the Broadcast runs ${bc[0].config.browsers}).` : '') + (every.length ? (() => {
+    const evDef = byName('frequency-every-change-default');
+    const met = every.filter((s) => s.outcomes.targets.all_screens_final_within_5s).length;
+    const quota = evDef.some((s) => rtCount(s, 'ConnectionRateLimitReached') > 0);
+    const rateLimited = [...every, ...evDef].some((s) => Object.keys(s.server_log_counts?.realtime || {}).some((k) => /RateLimit/.test(k) && k !== 'ConnectionRateLimitReached'));
+    return ` Publishing after every decision met the 5 s target in ${met} of ${every.length} runs with raised limits` + (evDef.length ? `; with the seeded limits (${reps(evDef)}), ${counts(evDef.map(minCurrent), evDef[0].outcomes.rounds[0].intended_recipients)} screens got there${quota ? ', because of the connection quota' : ''}.` : '.')
+      + (rateLimited ? ' A message-rate limit was logged;' : ' No message-rate limit was logged in any configuration tried;') + ` the per-second figure is averaged by the server [16], so this does not predict a hosted project's behaviour.`;
+  })() : ''));
   return out.join('\n');
 }
 
-const blocks = { finding: finding(), results: headline(), experiments: experiments(), steps: steps(), soak: soak(), auth: auth(), k6: k6() };
+const blocks = { finding: finding(), results: headline(), brief: plain(), experiments: experiments(), steps: steps(), soak: soak(), auth: auth(), k6: k6() };
 fs.writeFileSync(path.join(ROOT, 'results', 'SUMMARY.md'), summaryTable());
 const chartFrom = timeline();
 blocks.chart = chartFrom ? `![Timeline of ${chartFrom}](results/timeline.svg)` : 'No run recorded yet.';
-for (const f of ['README.md', 'REPORT.md']) {
+for (const f of ['README.md', 'REPORT.md', 'FINDINGS.md']) {
   const p = path.join(ROOT, f);
   if (!fs.existsSync(p)) continue;
   let t = fs.readFileSync(p, 'utf8');
