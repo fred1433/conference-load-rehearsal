@@ -1,0 +1,38 @@
+{
+  "measured_at": "2026-10-11T18:15:01.434Z",
+  "devices": 200,
+  "teams": 40,
+  "arrival_s": 120,
+  "deadline_window_s": 5,
+  "join": {
+    "med": 19.43,
+    "max": 56.444,
+    "p(90)": 22.42,
+    "p(95)": 23.686,
+    "avg": 20.610641791044777,
+    "min": 6.921
+  },
+  "decision": {
+    "med": 6.42,
+    "max": 29.698,
+    "p(90)": 8.669,
+    "p(95)": 17.892,
+    "avg": 7.57068292682927,
+    "min": 4.631
+  },
+  "http_req_failed": {
+    "rate": 0,
+    "passes": 0,
+    "fails": 445
+  },
+  "checks": {
+    "fails": 1,
+    "rate": 0.9958847736625515,
+    "passes": 242
+  },
+  "iterations": {
+    "count": 243,
+    "rate": 1.4697372659559076
+  },
+  "dropped_iterations": null
+}

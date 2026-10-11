@@ -1,0 +1,6105 @@
+[
+  {
+    "t": 2003.9937910000003,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 167,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 15,
+    "load1": 2.267578125,
+    "free_mb": 21800
+  },
+  {
+    "t": 2004.2951660000003,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 4004.6456249999997,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 169,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.267578125,
+    "free_mb": 22023
+  },
+  {
+    "t": 4004.7495000000004,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 6005.972125,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 170,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 22,
+    "load1": 2.267578125,
+    "free_mb": 21966
+  },
+  {
+    "t": 6006.17575,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 5007.829625,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 7.82,
+    "mem_mb": 53
+  },
+  {
+    "t": 5007.829625,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 2.18,
+    "mem_mb": 284
+  },
+  {
+    "t": 5007.829625,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 19
+  },
+  {
+    "t": 5007.829625,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.46,
+    "mem_mb": 178
+  },
+  {
+    "t": 5007.829625,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 4.45,
+    "mem_mb": 159
+  },
+  {
+    "t": 5007.829625,
+    "kind": "next",
+    "cpu_pct": 1,
+    "rss_mb": 142
+  },
+  {
+    "t": 8008.998915999999,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 172,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 12,
+    "load1": 2.326171875,
+    "free_mb": 21969
+  },
+  {
+    "t": 8009.246583,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 10009.596915999999,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 173,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.326171875,
+    "free_mb": 21964
+  },
+  {
+    "t": 10009.641291,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 12010.998125,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 175,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.2197265625,
+    "free_mb": 21948
+  },
+  {
+    "t": 12011.18225,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 10004.425583,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 6.03,
+    "mem_mb": 53
+  },
+  {
+    "t": 10004.425583,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 2.02,
+    "mem_mb": 284
+  },
+  {
+    "t": 10004.425583,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 19
+  },
+  {
+    "t": 10004.425583,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.38,
+    "mem_mb": 178
+  },
+  {
+    "t": 10004.425583,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.19,
+    "mem_mb": 160
+  },
+  {
+    "t": 10004.425583,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 144
+  },
+  {
+    "t": 14011.799874999999,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 175,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 2.2197265625,
+    "free_mb": 21954
+  },
+  {
+    "t": 14011.875750000001,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 16011.196833,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 176,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 16,
+    "load1": 2.2197265625,
+    "free_mb": 21951
+  },
+  {
+    "t": 16012.546333,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 15006.089541,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 3.97,
+    "mem_mb": 53
+  },
+  {
+    "t": 15006.089541,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.25,
+    "mem_mb": 284
+  },
+  {
+    "t": 15006.089541,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 19
+  },
+  {
+    "t": 15006.089541,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.2,
+    "mem_mb": 179
+  },
+  {
+    "t": 15006.089541,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 3.77,
+    "mem_mb": 160
+  },
+  {
+    "t": 15006.089541,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 146
+  },
+  {
+    "t": 18011.867916000003,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 177,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 16,
+    "load1": 2.28173828125,
+    "free_mb": 21946
+  },
+  {
+    "t": 18011.94025,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 20013.336833,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 179,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.28173828125,
+    "free_mb": 21950
+  },
+  {
+    "t": 20013.419041,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 22013.919916000003,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 179,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 12,
+    "load1": 2.2587890625,
+    "free_mb": 21938
+  },
+  {
+    "t": 22014.099625000003,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 20006.903250000003,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 2.35,
+    "mem_mb": 53
+  },
+  {
+    "t": 20006.903250000003,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.31,
+    "mem_mb": 284
+  },
+  {
+    "t": 20006.903250000003,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 19
+  },
+  {
+    "t": 20006.903250000003,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.15,
+    "mem_mb": 179
+  },
+  {
+    "t": 20006.903250000003,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.46,
+    "mem_mb": 160
+  },
+  {
+    "t": 20006.903250000003,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 146
+  },
+  {
+    "t": 24016.858791000002,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 180,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 2.2587890625,
+    "free_mb": 21955
+  },
+  {
+    "t": 24017.051541,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 26017.333416,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 181,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.2587890625,
+    "free_mb": 21864
+  },
+  {
+    "t": 26017.38775,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 25008.13,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 2.43,
+    "mem_mb": 53
+  },
+  {
+    "t": 25008.13,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 2.32,
+    "mem_mb": 284
+  },
+  {
+    "t": 25008.13,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 19
+  },
+  {
+    "t": 25008.13,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.32,
+    "mem_mb": 179
+  },
+  {
+    "t": 25008.13,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.66,
+    "mem_mb": 160
+  },
+  {
+    "t": 25008.13,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 141
+  },
+  {
+    "t": 28017.703250000002,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 181,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 12,
+    "load1": 2.07763671875,
+    "free_mb": 21916
+  },
+  {
+    "t": 28017.777708,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 30017.958375,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 181,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 17,
+    "load1": 2.07763671875,
+    "free_mb": 21916
+  },
+  {
+    "t": 30018.092083,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 32017.997166000005,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 181,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 2.1513671875,
+    "free_mb": 21878
+  },
+  {
+    "t": 32018.083791,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 30008.361041,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.26,
+    "mem_mb": 53
+  },
+  {
+    "t": 30008.361041,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1,
+    "mem_mb": 284
+  },
+  {
+    "t": 30008.361041,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 19
+  },
+  {
+    "t": 30008.361041,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.41,
+    "mem_mb": 179
+  },
+  {
+    "t": 30008.361041,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 0.77,
+    "mem_mb": 160
+  },
+  {
+    "t": 30008.361041,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 141
+  },
+  {
+    "t": 34019.030957999996,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 182,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 2.1513671875,
+    "free_mb": 21862
+  },
+  {
+    "t": 34019.074916,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 36020.537749999996,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 156,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.1513671875,
+    "free_mb": 21752
+  },
+  {
+    "t": 36020.587666,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 35009.883208,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 2.74,
+    "mem_mb": 53
+  },
+  {
+    "t": 35009.883208,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.55,
+    "mem_mb": 284
+  },
+  {
+    "t": 35009.883208,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 19
+  },
+  {
+    "t": 35009.883208,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.27,
+    "mem_mb": 180
+  },
+  {
+    "t": 35009.883208,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.52,
+    "mem_mb": 160
+  },
+  {
+    "t": 35009.883208,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 134
+  },
+  {
+    "t": 38021.480166,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 156,
+    "loop_p99_ms": 15,
+    "loop_max_ms": 29,
+    "load1": 2.21923828125,
+    "free_mb": 21163
+  },
+  {
+    "t": 38021.528,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 40023.758958,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 156,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.21923828125,
+    "free_mb": 20411
+  },
+  {
+    "t": 40023.802082999995,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 42025.370791,
+    "kind": "generator",
+    "cpu_pct": 4,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.28173828125,
+    "free_mb": 19840
+  },
+  {
+    "t": 42025.422125,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 40011.176374999995,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 5.14,
+    "mem_mb": 53
+  },
+  {
+    "t": 40011.176374999995,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.34,
+    "mem_mb": 284
+  },
+  {
+    "t": 40011.176374999995,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 19
+  },
+  {
+    "t": 40011.176374999995,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.28,
+    "mem_mb": 180
+  },
+  {
+    "t": 40011.176374999995,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.06,
+    "mem_mb": 160
+  },
+  {
+    "t": 40011.176374999995,
+    "kind": "next",
+    "cpu_pct": 1,
+    "rss_mb": 134
+  },
+  {
+    "t": 44026.378165999995,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 12,
+    "load1": 2.28173828125,
+    "free_mb": 19851
+  },
+  {
+    "t": 44026.480208,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 46028.497875,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.28173828125,
+    "free_mb": 19838
+  },
+  {
+    "t": 46028.548582999996,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 45011.932083,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 3.07,
+    "mem_mb": 53
+  },
+  {
+    "t": 45011.932083,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.3,
+    "mem_mb": 284
+  },
+  {
+    "t": 45011.932083,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 19
+  },
+  {
+    "t": 45011.932083,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.28,
+    "mem_mb": 180
+  },
+  {
+    "t": 45011.932083,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.63,
+    "mem_mb": 160
+  },
+  {
+    "t": 45011.932083,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 126
+  },
+  {
+    "t": 48029.174999999996,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.8994140625,
+    "free_mb": 19840
+  },
+  {
+    "t": 48029.238666,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 50031.099624999995,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.8994140625,
+    "free_mb": 19920
+  },
+  {
+    "t": 50031.196082999995,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 52032.909666,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 12,
+    "load1": 2.8271484375,
+    "free_mb": 19865
+  },
+  {
+    "t": 52032.975541,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 50012.743375,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 1.8,
+    "mem_mb": 53
+  },
+  {
+    "t": 50012.743375,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.29,
+    "mem_mb": 284
+  },
+  {
+    "t": 50012.743375,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 19
+  },
+  {
+    "t": 50012.743375,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.14,
+    "mem_mb": 181
+  },
+  {
+    "t": 50012.743375,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 0.98,
+    "mem_mb": 160
+  },
+  {
+    "t": 50012.743375,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 126
+  },
+  {
+    "t": 54034.639291,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 12,
+    "load1": 2.8271484375,
+    "free_mb": 19874
+  },
+  {
+    "t": 54034.697457999995,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 56034.439332999995,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 15,
+    "load1": 2.8271484375,
+    "free_mb": 19804
+  },
+  {
+    "t": 56034.499749999995,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 55013.236124999996,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 5.36,
+    "mem_mb": 53
+  },
+  {
+    "t": 55013.236124999996,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 2.36,
+    "mem_mb": 284
+  },
+  {
+    "t": 55013.236124999996,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 19
+  },
+  {
+    "t": 55013.236124999996,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.42,
+    "mem_mb": 181
+  },
+  {
+    "t": 55013.236124999996,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.67,
+    "mem_mb": 160
+  },
+  {
+    "t": 55013.236124999996,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 126
+  },
+  {
+    "t": 58035.102708,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 14,
+    "load1": 2.6806640625,
+    "free_mb": 19791
+  },
+  {
+    "t": 58035.180333,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 60036.25075,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 15,
+    "load1": 2.6806640625,
+    "free_mb": 19746
+  },
+  {
+    "t": 60036.362582999995,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 62036.545083000005,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 21,
+    "load1": 2.6259765625,
+    "free_mb": 19739
+  },
+  {
+    "t": 62036.595333000005,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 60014.371332999996,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.49,
+    "mem_mb": 53
+  },
+  {
+    "t": 60014.371332999996,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.35,
+    "mem_mb": 284
+  },
+  {
+    "t": 60014.371332999996,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 60014.371332999996,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.08,
+    "mem_mb": 181
+  },
+  {
+    "t": 60014.371332999996,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.07,
+    "mem_mb": 160
+  },
+  {
+    "t": 60014.371332999996,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 126
+  },
+  {
+    "t": 64037.201415999996,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.6259765625,
+    "free_mb": 19813
+  },
+  {
+    "t": 64037.294041,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 66038.146083,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.6259765625,
+    "free_mb": 19792
+  },
+  {
+    "t": 66038.199708,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 65014.32354099999,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 1.7,
+    "mem_mb": 53
+  },
+  {
+    "t": 65014.32354099999,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.24,
+    "mem_mb": 284
+  },
+  {
+    "t": 65014.32354099999,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 65014.32354099999,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.15,
+    "mem_mb": 182
+  },
+  {
+    "t": 65014.32354099999,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 3.02,
+    "mem_mb": 160
+  },
+  {
+    "t": 65014.32354099999,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 126
+  },
+  {
+    "t": 68038.371166,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 16,
+    "load1": 2.41552734375,
+    "free_mb": 19793
+  },
+  {
+    "t": 68038.42470799999,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 70038.122875,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.41552734375,
+    "free_mb": 19715
+  },
+  {
+    "t": 70038.17954099999,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 72039.153791,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.3017578125,
+    "free_mb": 19433
+  },
+  {
+    "t": 72039.280333,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 70016.678166,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 2.02,
+    "mem_mb": 53
+  },
+  {
+    "t": 70016.678166,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.76,
+    "mem_mb": 284
+  },
+  {
+    "t": 70016.678166,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 70016.678166,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.3,
+    "mem_mb": 182
+  },
+  {
+    "t": 70016.678166,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.26,
+    "mem_mb": 160
+  },
+  {
+    "t": 70016.678166,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 126
+  },
+  {
+    "t": 74039.1005,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 167,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 15,
+    "load1": 2.3017578125,
+    "free_mb": 19803
+  },
+  {
+    "t": 74039.263875,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 76039.384375,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 167,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.3017578125,
+    "free_mb": 19784
+  },
+  {
+    "t": 76039.56404099999,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 75016.48525,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.09,
+    "mem_mb": 53
+  },
+  {
+    "t": 75016.48525,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.71,
+    "mem_mb": 284
+  },
+  {
+    "t": 75016.48525,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 75016.48525,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.05,
+    "mem_mb": 182
+  },
+  {
+    "t": 75016.48525,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.08,
+    "mem_mb": 160
+  },
+  {
+    "t": 75016.48525,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 126
+  },
+  {
+    "t": 78040.531791,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 167,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.4375,
+    "free_mb": 19783
+  },
+  {
+    "t": 78040.592,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 80040.790666,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 167,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 14,
+    "load1": 2.4375,
+    "free_mb": 19758
+  },
+  {
+    "t": 80040.851833,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 82041.704208,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 161,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 14,
+    "load1": 2.5625,
+    "free_mb": 19830
+  },
+  {
+    "t": 82041.749166,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 80017.0585,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 4.58,
+    "mem_mb": 53
+  },
+  {
+    "t": 80017.0585,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.95,
+    "mem_mb": 284
+  },
+  {
+    "t": 80017.0585,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 80017.0585,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.32,
+    "mem_mb": 183
+  },
+  {
+    "t": 80017.0585,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.63,
+    "mem_mb": 160
+  },
+  {
+    "t": 80017.0585,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 126
+  },
+  {
+    "t": 84041.776958,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 162,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.5625,
+    "free_mb": 19824
+  },
+  {
+    "t": 84041.81775,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 86042.363333,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 14,
+    "load1": 2.5625,
+    "free_mb": 19824
+  },
+  {
+    "t": 86042.522583,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 85018.145666,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 2.47,
+    "mem_mb": 53
+  },
+  {
+    "t": 85018.145666,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.28,
+    "mem_mb": 284
+  },
+  {
+    "t": 85018.145666,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 85018.145666,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.1,
+    "mem_mb": 183
+  },
+  {
+    "t": 85018.145666,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 3.26,
+    "mem_mb": 160
+  },
+  {
+    "t": 85018.145666,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 126
+  },
+  {
+    "t": 88042.382041,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 15,
+    "load1": 2.51708984375,
+    "free_mb": 19842
+  },
+  {
+    "t": 88042.431375,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 90042.016166,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 164,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.51708984375,
+    "free_mb": 20022
+  },
+  {
+    "t": 90042.066916,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 92041.825958,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 165,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.3955078125,
+    "free_mb": 19877
+  },
+  {
+    "t": 92041.976875,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 90018.38925,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 3.72,
+    "mem_mb": 53
+  },
+  {
+    "t": 90018.38925,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.71,
+    "mem_mb": 284
+  },
+  {
+    "t": 90018.38925,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 90018.38925,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.28,
+    "mem_mb": 183
+  },
+  {
+    "t": 90018.38925,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.45,
+    "mem_mb": 160
+  },
+  {
+    "t": 90018.38925,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 126
+  },
+  {
+    "t": 94043.41645799999,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 166,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.3955078125,
+    "free_mb": 19857
+  },
+  {
+    "t": 94043.58975,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 96043.402458,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 166,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 14,
+    "load1": 2.3955078125,
+    "free_mb": 19826
+  },
+  {
+    "t": 96043.563708,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 95019.04691599999,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 5.91,
+    "mem_mb": 51
+  },
+  {
+    "t": 95019.04691599999,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 2.3,
+    "mem_mb": 284
+  },
+  {
+    "t": 95019.04691599999,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 95019.04691599999,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.54,
+    "mem_mb": 183
+  },
+  {
+    "t": 95019.04691599999,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.54,
+    "mem_mb": 160
+  },
+  {
+    "t": 95019.04691599999,
+    "kind": "next",
+    "cpu_pct": 1,
+    "rss_mb": 126
+  },
+  {
+    "t": 98043.575833,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 168,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 20,
+    "load1": 3.24462890625,
+    "free_mb": 19837
+  },
+  {
+    "t": 98043.71949999999,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 100043.323791,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 169,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 17,
+    "load1": 3.24462890625,
+    "free_mb": 19791
+  },
+  {
+    "t": 100043.38674999999,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 102045.491666,
+    "kind": "generator",
+    "cpu_pct": 4,
+    "rss_mb": 170,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 17,
+    "load1": 3.224609375,
+    "free_mb": 20033
+  },
+  {
+    "t": 102045.576583,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 100019.95995799999,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 3.14,
+    "mem_mb": 51
+  },
+  {
+    "t": 100019.95995799999,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.76,
+    "mem_mb": 284
+  },
+  {
+    "t": 100019.95995799999,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 100019.95995799999,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.29,
+    "mem_mb": 184
+  },
+  {
+    "t": 100019.95995799999,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.84,
+    "mem_mb": 160
+  },
+  {
+    "t": 100019.95995799999,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 125
+  },
+  {
+    "t": 104046.69916599999,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 3.224609375,
+    "free_mb": 20046
+  },
+  {
+    "t": 104046.84529099999,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 106047.26699999999,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 3.224609375,
+    "free_mb": 20041
+  },
+  {
+    "t": 106047.31125,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 105022.519208,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 2.69,
+    "mem_mb": 51
+  },
+  {
+    "t": 105022.519208,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.81,
+    "mem_mb": 284
+  },
+  {
+    "t": 105022.519208,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 105022.519208,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.46,
+    "mem_mb": 184
+  },
+  {
+    "t": 105022.519208,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 3.76,
+    "mem_mb": 160
+  },
+  {
+    "t": 105022.519208,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 126
+  },
+  {
+    "t": 108047.729416,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.96630859375,
+    "free_mb": 20041
+  },
+  {
+    "t": 108047.863958,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 110047.292,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 171,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 16,
+    "load1": 2.96630859375,
+    "free_mb": 20033
+  },
+  {
+    "t": 110048.6905,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 1,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 112047.177375,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.728515625,
+    "free_mb": 20113
+  },
+  {
+    "t": 112048.626125,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 110023.271958,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 6.99,
+    "mem_mb": 51
+  },
+  {
+    "t": 110023.271958,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 2.78,
+    "mem_mb": 284
+  },
+  {
+    "t": 110023.271958,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 110023.271958,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.63,
+    "mem_mb": 185
+  },
+  {
+    "t": 110023.271958,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.39,
+    "mem_mb": 160
+  },
+  {
+    "t": 110023.271958,
+    "kind": "next",
+    "cpu_pct": 4,
+    "rss_mb": 126
+  },
+  {
+    "t": 114048.274666,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 171,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.728515625,
+    "free_mb": 20129
+  },
+  {
+    "t": 114048.402083,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 116050.50287499999,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.728515625,
+    "free_mb": 20098
+  },
+  {
+    "t": 116050.598375,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 115023.4445,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 4.25,
+    "mem_mb": 51
+  },
+  {
+    "t": 115023.4445,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.93,
+    "mem_mb": 284
+  },
+  {
+    "t": 115023.4445,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 115023.4445,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.4,
+    "mem_mb": 185
+  },
+  {
+    "t": 115023.4445,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.63,
+    "mem_mb": 160
+  },
+  {
+    "t": 115023.4445,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 125
+  },
+  {
+    "t": 118050.41987499999,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 171,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.669921875,
+    "free_mb": 20109
+  },
+  {
+    "t": 118050.473541,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 120051.838416,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 37,
+    "load1": 2.669921875,
+    "free_mb": 20080
+  },
+  {
+    "t": 120051.974666,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 122053.536625,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 171,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 12,
+    "load1": 2.4560546875,
+    "free_mb": 20100
+  },
+  {
+    "t": 122053.682833,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 120024.662041,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 4.03,
+    "mem_mb": 51
+  },
+  {
+    "t": 120024.662041,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.49,
+    "mem_mb": 284
+  },
+  {
+    "t": 120024.662041,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 18
+  },
+  {
+    "t": 120024.662041,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.37,
+    "mem_mb": 186
+  },
+  {
+    "t": 120024.662041,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.1,
+    "mem_mb": 160
+  },
+  {
+    "t": 120024.662041,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 125
+  },
+  {
+    "t": 124053.91033299999,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 2.4560546875,
+    "free_mb": 20116
+  },
+  {
+    "t": 124054.04762499999,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 126055.903708,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 17,
+    "loop_max_ms": 19,
+    "load1": 2.4560546875,
+    "free_mb": 20059
+  },
+  {
+    "t": 126056.21475,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 125028.397375,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.34,
+    "mem_mb": 51
+  },
+  {
+    "t": 125028.397375,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.98,
+    "mem_mb": 284
+  },
+  {
+    "t": 125028.397375,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 125028.397375,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.37,
+    "mem_mb": 186
+  },
+  {
+    "t": 125028.397375,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.72,
+    "mem_mb": 162
+  },
+  {
+    "t": 125028.397375,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 125
+  },
+  {
+    "t": 128057.38470799998,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 171,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.33935546875,
+    "free_mb": 20095
+  },
+  {
+    "t": 128057.52225,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 130058.272958,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 16,
+    "load1": 2.33935546875,
+    "free_mb": 20103
+  },
+  {
+    "t": 130058.38762499999,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 132058.72625,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.47216796875,
+    "free_mb": 20101
+  },
+  {
+    "t": 132058.87825,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 130029.191875,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.33,
+    "mem_mb": 51
+  },
+  {
+    "t": 130029.191875,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 2.25,
+    "mem_mb": 284
+  },
+  {
+    "t": 130029.191875,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 130029.191875,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.19,
+    "mem_mb": 186
+  },
+  {
+    "t": 130029.191875,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.4,
+    "mem_mb": 160
+  },
+  {
+    "t": 130029.191875,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 124
+  },
+  {
+    "t": 134060.59095800002,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.47216796875,
+    "free_mb": 20042
+  },
+  {
+    "t": 134060.717458,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 136061.147583,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 2.47216796875,
+    "free_mb": 20029
+  },
+  {
+    "t": 136061.42275,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 135029.340708,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.11,
+    "mem_mb": 51
+  },
+  {
+    "t": 135029.340708,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.62,
+    "mem_mb": 284
+  },
+  {
+    "t": 135029.340708,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 135029.340708,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.15,
+    "mem_mb": 186
+  },
+  {
+    "t": 135029.340708,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 0.99,
+    "mem_mb": 160
+  },
+  {
+    "t": 135029.340708,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 124
+  },
+  {
+    "t": 138061.62716600002,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.67431640625,
+    "free_mb": 19971
+  },
+  {
+    "t": 138061.68795800002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 140060.98737500003,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 14,
+    "load1": 2.67431640625,
+    "free_mb": 19992
+  },
+  {
+    "t": 140061.095208,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 142061.82950000002,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 17,
+    "loop_max_ms": 19,
+    "load1": 2.5400390625,
+    "free_mb": 20052
+  },
+  {
+    "t": 142061.949708,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 140029.9745,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.16,
+    "mem_mb": 51
+  },
+  {
+    "t": 140029.9745,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.93,
+    "mem_mb": 284
+  },
+  {
+    "t": 140029.9745,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 140029.9745,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.16,
+    "mem_mb": 186
+  },
+  {
+    "t": 140029.9745,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.71,
+    "mem_mb": 160
+  },
+  {
+    "t": 140029.9745,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 124
+  },
+  {
+    "t": 144063.161666,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 18,
+    "load1": 2.5400390625,
+    "free_mb": 20155
+  },
+  {
+    "t": 144063.288666,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 146064.48604100003,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 2.5400390625,
+    "free_mb": 20198
+  },
+  {
+    "t": 146064.73570800002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 145030.635916,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.14,
+    "mem_mb": 51
+  },
+  {
+    "t": 145030.635916,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.49,
+    "mem_mb": 284
+  },
+  {
+    "t": 145030.635916,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 145030.635916,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.13,
+    "mem_mb": 186
+  },
+  {
+    "t": 145030.635916,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.63,
+    "mem_mb": 160
+  },
+  {
+    "t": 145030.635916,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 124
+  },
+  {
+    "t": 148065.830458,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.33642578125,
+    "free_mb": 20233
+  },
+  {
+    "t": 148065.96033300002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 150067.411166,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 16,
+    "load1": 2.33642578125,
+    "free_mb": 20236
+  },
+  {
+    "t": 150067.54725,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 152067.66733300002,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 19,
+    "load1": 2.38916015625,
+    "free_mb": 20230
+  },
+  {
+    "t": 152067.955541,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 150031.411083,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.39,
+    "mem_mb": 51
+  },
+  {
+    "t": 150031.411083,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.94,
+    "mem_mb": 284
+  },
+  {
+    "t": 150031.411083,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 150031.411083,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.13,
+    "mem_mb": 186
+  },
+  {
+    "t": 150031.411083,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.19,
+    "mem_mb": 160
+  },
+  {
+    "t": 150031.411083,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 124
+  },
+  {
+    "t": 154067.651083,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 171,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 16,
+    "load1": 2.38916015625,
+    "free_mb": 20246
+  },
+  {
+    "t": 154068.137458,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 156067.159041,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 170,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 2.38916015625,
+    "free_mb": 20159
+  },
+  {
+    "t": 156068.484208,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 155031.37900000002,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.05,
+    "mem_mb": 51
+  },
+  {
+    "t": 155031.37900000002,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.32,
+    "mem_mb": 284
+  },
+  {
+    "t": 155031.37900000002,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 155031.37900000002,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.12,
+    "mem_mb": 186
+  },
+  {
+    "t": 155031.37900000002,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.33,
+    "mem_mb": 160
+  },
+  {
+    "t": 155031.37900000002,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 124
+  },
+  {
+    "t": 158069.886541,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 170,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 21,
+    "load1": 2.19775390625,
+    "free_mb": 20148
+  },
+  {
+    "t": 158070.025625,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 160071.90079100002,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 170,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 2.19775390625,
+    "free_mb": 20134
+  },
+  {
+    "t": 160071.9445,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 162073.091166,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 170,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 2.1015625,
+    "free_mb": 20122
+  },
+  {
+    "t": 162073.451791,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 160032.087166,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.08,
+    "mem_mb": 51
+  },
+  {
+    "t": 160032.087166,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.33,
+    "mem_mb": 284
+  },
+  {
+    "t": 160032.087166,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 160032.087166,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.18,
+    "mem_mb": 186
+  },
+  {
+    "t": 160032.087166,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.4,
+    "mem_mb": 160
+  },
+  {
+    "t": 160032.087166,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 124
+  },
+  {
+    "t": 164074.11283300002,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 170,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 2.1015625,
+    "free_mb": 20049
+  },
+  {
+    "t": 164074.203916,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 166075.17787500002,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 170,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 16,
+    "load1": 2.1015625,
+    "free_mb": 20071
+  },
+  {
+    "t": 166075.302208,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 165032.60950000002,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 1.28,
+    "mem_mb": 51
+  },
+  {
+    "t": 165032.60950000002,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.26,
+    "mem_mb": 284
+  },
+  {
+    "t": 165032.60950000002,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 165032.60950000002,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.69,
+    "mem_mb": 186
+  },
+  {
+    "t": 165032.60950000002,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.7,
+    "mem_mb": 159
+  },
+  {
+    "t": 165032.60950000002,
+    "kind": "next",
+    "cpu_pct": 1,
+    "rss_mb": 128
+  },
+  {
+    "t": 168075.756958,
+    "kind": "generator",
+    "cpu_pct": 6,
+    "rss_mb": 159,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 23,
+    "load1": 2.17333984375,
+    "free_mb": 20098
+  },
+  {
+    "t": 168076.01975,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 170077.11533300002,
+    "kind": "generator",
+    "cpu_pct": 14,
+    "rss_mb": 174,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 42,
+    "load1": 2.17333984375,
+    "free_mb": 20063
+  },
+  {
+    "t": 170077.170958,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 172079.224416,
+    "kind": "generator",
+    "cpu_pct": 8,
+    "rss_mb": 185,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 14,
+    "load1": 2.0791015625,
+    "free_mb": 20047
+  },
+  {
+    "t": 172079.28312500002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 170032.056125,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.74,
+    "mem_mb": 52
+  },
+  {
+    "t": 170032.056125,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.29,
+    "mem_mb": 284
+  },
+  {
+    "t": 170032.056125,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 170032.056125,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.55,
+    "mem_mb": 186
+  },
+  {
+    "t": 170032.056125,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.24,
+    "mem_mb": 162
+  },
+  {
+    "t": 170032.056125,
+    "kind": "next",
+    "cpu_pct": 3,
+    "rss_mb": 152
+  },
+  {
+    "t": 174081.384125,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 19,
+    "load1": 2.0791015625,
+    "free_mb": 20064
+  },
+  {
+    "t": 174081.676708,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 176081.20150000002,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.0791015625,
+    "free_mb": 20060
+  },
+  {
+    "t": 176081.249916,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 175033.511208,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.41,
+    "mem_mb": 52
+  },
+  {
+    "t": 175033.511208,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.68,
+    "mem_mb": 284
+  },
+  {
+    "t": 175033.511208,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 175033.511208,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.02,
+    "mem_mb": 186
+  },
+  {
+    "t": 175033.511208,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.94,
+    "mem_mb": 162
+  },
+  {
+    "t": 175033.511208,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 152
+  },
+  {
+    "t": 178081.5735,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 2.15283203125,
+    "free_mb": 20032
+  },
+  {
+    "t": 178081.9755,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 180082.48112500002,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 185,
+    "loop_p99_ms": 16,
+    "loop_max_ms": 21,
+    "load1": 2.15283203125,
+    "free_mb": 20014
+  },
+  {
+    "t": 180082.52925000002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 182082.405375,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 185,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 42,
+    "load1": 4.54248046875,
+    "free_mb": 19974
+  },
+  {
+    "t": 182082.49333300002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 1,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 180033.83654100003,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.39,
+    "mem_mb": 52
+  },
+  {
+    "t": 180033.83654100003,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.19,
+    "mem_mb": 284
+  },
+  {
+    "t": 180033.83654100003,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 180033.83654100003,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0,
+    "mem_mb": 186
+  },
+  {
+    "t": 180033.83654100003,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.9,
+    "mem_mb": 162
+  },
+  {
+    "t": 180033.83654100003,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 152
+  },
+  {
+    "t": 184083.160666,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 55,
+    "load1": 4.54248046875,
+    "free_mb": 19999
+  },
+  {
+    "t": 184083.31933300002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 186084.406166,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 4.54248046875,
+    "free_mb": 19966
+  },
+  {
+    "t": 186084.56891600002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 185034.50475000002,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.21,
+    "mem_mb": 52
+  },
+  {
+    "t": 185034.50475000002,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.24,
+    "mem_mb": 284
+  },
+  {
+    "t": 185034.50475000002,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 185034.50475000002,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0,
+    "mem_mb": 186
+  },
+  {
+    "t": 185034.50475000002,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.14,
+    "mem_mb": 162
+  },
+  {
+    "t": 185034.50475000002,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 152
+  },
+  {
+    "t": 188085.608791,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 4.4189453125,
+    "free_mb": 19979
+  },
+  {
+    "t": 188085.763083,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 190085.913333,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 4.4189453125,
+    "free_mb": 19929
+  },
+  {
+    "t": 190085.968916,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 192086.64412500002,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 185,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 4.38525390625,
+    "free_mb": 19936
+  },
+  {
+    "t": 192086.698,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 190035.26408300002,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.19,
+    "mem_mb": 52
+  },
+  {
+    "t": 190035.26408300002,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 0.69,
+    "mem_mb": 284
+  },
+  {
+    "t": 190035.26408300002,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 190035.26408300002,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0,
+    "mem_mb": 186
+  },
+  {
+    "t": 190035.26408300002,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.28,
+    "mem_mb": 162
+  },
+  {
+    "t": 190035.26408300002,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 152
+  },
+  {
+    "t": 194086.57625,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 12,
+    "load1": 4.38525390625,
+    "free_mb": 19951
+  },
+  {
+    "t": 194086.845166,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 196087.42412500002,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 19,
+    "load1": 4.38525390625,
+    "free_mb": 19931
+  },
+  {
+    "t": 196087.71037500002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 195035.854125,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.43,
+    "mem_mb": 52
+  },
+  {
+    "t": 195035.854125,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 0.85,
+    "mem_mb": 284
+  },
+  {
+    "t": 195035.854125,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 195035.854125,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0,
+    "mem_mb": 186
+  },
+  {
+    "t": 195035.854125,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.59,
+    "mem_mb": 162
+  },
+  {
+    "t": 195035.854125,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 152
+  },
+  {
+    "t": 198089.338541,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 4.35400390625,
+    "free_mb": 19946
+  },
+  {
+    "t": 198089.654041,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 200091.430208,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 185,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 4.35400390625,
+    "free_mb": 19982
+  },
+  {
+    "t": 200091.486291,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 202091.250208,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 185,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 20,
+    "load1": 4.1650390625,
+    "free_mb": 19989
+  },
+  {
+    "t": 202091.373958,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 1,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 200036.947125,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.13,
+    "mem_mb": 52
+  },
+  {
+    "t": 200036.947125,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 0.81,
+    "mem_mb": 284
+  },
+  {
+    "t": 200036.947125,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 200036.947125,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.03,
+    "mem_mb": 186
+  },
+  {
+    "t": 200036.947125,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.98,
+    "mem_mb": 162
+  },
+  {
+    "t": 200036.947125,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 152
+  },
+  {
+    "t": 204093.704583,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 4.1650390625,
+    "free_mb": 20007
+  },
+  {
+    "t": 204093.976291,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 206094.81645800002,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 185,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 12,
+    "load1": 4.1650390625,
+    "free_mb": 20009
+  },
+  {
+    "t": 206094.867375,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 205037.68550000002,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.16,
+    "mem_mb": 52
+  },
+  {
+    "t": 205037.68550000002,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.1,
+    "mem_mb": 284
+  },
+  {
+    "t": 205037.68550000002,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 205037.68550000002,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0,
+    "mem_mb": 186
+  },
+  {
+    "t": 205037.68550000002,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.56,
+    "mem_mb": 162
+  },
+  {
+    "t": 205037.68550000002,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 152
+  },
+  {
+    "t": 208096.430125,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 4.0712890625,
+    "free_mb": 20033
+  },
+  {
+    "t": 208096.583625,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 210095.91179100002,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 185,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 17,
+    "load1": 4.0712890625,
+    "free_mb": 20020
+  },
+  {
+    "t": 210095.9565,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 212098.20175,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 185,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 4.0712890625,
+    "free_mb": 20046
+  },
+  {
+    "t": 212098.26958300002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 210038.063375,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 1.36,
+    "mem_mb": 52
+  },
+  {
+    "t": 210038.063375,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 0.91,
+    "mem_mb": 284
+  },
+  {
+    "t": 210038.063375,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 210038.063375,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.57,
+    "mem_mb": 186
+  },
+  {
+    "t": 210038.063375,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 2.79,
+    "mem_mb": 160
+  },
+  {
+    "t": 210038.063375,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 154
+  },
+  {
+    "t": 214099.232041,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 186,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 16,
+    "load1": 3.8251953125,
+    "free_mb": 20095
+  },
+  {
+    "t": 214099.601958,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 216099.820708,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 186,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 3.8251953125,
+    "free_mb": 20082
+  },
+  {
+    "t": 216100.35183300002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 215038.963041,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.25,
+    "mem_mb": 52
+  },
+  {
+    "t": 215038.963041,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.12,
+    "mem_mb": 284
+  },
+  {
+    "t": 215038.963041,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 215038.963041,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.07,
+    "mem_mb": 186
+  },
+  {
+    "t": 215038.963041,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 0.99,
+    "mem_mb": 159
+  },
+  {
+    "t": 215038.963041,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 154
+  },
+  {
+    "t": 218100.75266600001,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 186,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 3.9990234375,
+    "free_mb": 20096
+  },
+  {
+    "t": 218100.890625,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 220101.412458,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 180,
+    "loop_p99_ms": 15,
+    "loop_max_ms": 30,
+    "load1": 3.9990234375,
+    "free_mb": 19771
+  },
+  {
+    "t": 220101.471458,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 222101.157,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 180,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 24,
+    "load1": 3.9990234375,
+    "free_mb": 19445
+  },
+  {
+    "t": 222101.341041,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 220040.763833,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.5,
+    "mem_mb": 52
+  },
+  {
+    "t": 220040.763833,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 0.97,
+    "mem_mb": 284
+  },
+  {
+    "t": 220040.763833,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 220040.763833,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.07,
+    "mem_mb": 186
+  },
+  {
+    "t": 220040.763833,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.02,
+    "mem_mb": 159
+  },
+  {
+    "t": 220040.763833,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 154
+  },
+  {
+    "t": 224101.349166,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 180,
+    "loop_p99_ms": 17,
+    "loop_max_ms": 21,
+    "load1": 5.2001953125,
+    "free_mb": 18743
+  },
+  {
+    "t": 224101.39875000002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 226101.261666,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 180,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 21,
+    "load1": 5.2001953125,
+    "free_mb": 18506
+  },
+  {
+    "t": 226101.32104100002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 1,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 225040.79987500003,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.16,
+    "mem_mb": 52
+  },
+  {
+    "t": 225040.79987500003,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 0.68,
+    "mem_mb": 284
+  },
+  {
+    "t": 225040.79987500003,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 225040.79987500003,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.03,
+    "mem_mb": 186
+  },
+  {
+    "t": 225040.79987500003,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.02,
+    "mem_mb": 159
+  },
+  {
+    "t": 225040.79987500003,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 154
+  },
+  {
+    "t": 228102.35350000003,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 180,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 20,
+    "load1": 6.06494140625,
+    "free_mb": 18986
+  },
+  {
+    "t": 228102.407,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 230102.46325,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 180,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 19,
+    "load1": 6.06494140625,
+    "free_mb": 19032
+  },
+  {
+    "t": 230102.517041,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 232102.894,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 160,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 16,
+    "load1": 6.06494140625,
+    "free_mb": 18988
+  },
+  {
+    "t": 232102.966916,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 230040.937375,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.2,
+    "mem_mb": 52
+  },
+  {
+    "t": 230040.937375,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.64,
+    "mem_mb": 284
+  },
+  {
+    "t": 230040.937375,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 230040.937375,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.14,
+    "mem_mb": 186
+  },
+  {
+    "t": 230040.937375,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 0.8,
+    "mem_mb": 159
+  },
+  {
+    "t": 230040.937375,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 154
+  },
+  {
+    "t": 234103.69483300002,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 160,
+    "loop_p99_ms": 15,
+    "loop_max_ms": 22,
+    "load1": 6.7001953125,
+    "free_mb": 19027
+  },
+  {
+    "t": 234103.78687500002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 236103.81900000002,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 160,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 6.7001953125,
+    "free_mb": 18996
+  },
+  {
+    "t": 236103.98162500001,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 235042.31350000002,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.27,
+    "mem_mb": 52
+  },
+  {
+    "t": 235042.31350000002,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.35,
+    "mem_mb": 284
+  },
+  {
+    "t": 235042.31350000002,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 235042.31350000002,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0,
+    "mem_mb": 186
+  },
+  {
+    "t": 235042.31350000002,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.54,
+    "mem_mb": 159
+  },
+  {
+    "t": 235042.31350000002,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 154
+  },
+  {
+    "t": 238104.25433300002,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 161,
+    "loop_p99_ms": 16,
+    "loop_max_ms": 23,
+    "load1": 8.24560546875,
+    "free_mb": 18802
+  },
+  {
+    "t": 238104.34170800002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 240105.40937500002,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 161,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 19,
+    "load1": 8.24560546875,
+    "free_mb": 18595
+  },
+  {
+    "t": 240105.456416,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 242105.447958,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 161,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 8.24560546875,
+    "free_mb": 18531
+  },
+  {
+    "t": 242105.576166,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 240042.807333,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.43,
+    "mem_mb": 52
+  },
+  {
+    "t": 240042.807333,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.19,
+    "mem_mb": 284
+  },
+  {
+    "t": 240042.807333,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 17
+  },
+  {
+    "t": 240042.807333,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.07,
+    "mem_mb": 186
+  },
+  {
+    "t": 240042.807333,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.81,
+    "mem_mb": 160
+  },
+  {
+    "t": 240042.807333,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 154
+  },
+  {
+    "t": 244105.814625,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 162,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 8.5458984375,
+    "free_mb": 18471
+  },
+  {
+    "t": 244105.860125,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 246106.764583,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 163,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 14,
+    "load1": 8.5458984375,
+    "free_mb": 18497
+  },
+  {
+    "t": 246106.895458,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 245043.585041,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.14,
+    "mem_mb": 52
+  },
+  {
+    "t": 245043.585041,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.34,
+    "mem_mb": 284
+  },
+  {
+    "t": 245043.585041,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 15
+  },
+  {
+    "t": 245043.585041,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0,
+    "mem_mb": 186
+  },
+  {
+    "t": 245043.585041,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 0.82,
+    "mem_mb": 159
+  },
+  {
+    "t": 245043.585041,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 154
+  },
+  {
+    "t": 248107.05500000002,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 8.501953125,
+    "free_mb": 18420
+  },
+  {
+    "t": 248107.351958,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 250108.005875,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 163,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 14,
+    "load1": 8.501953125,
+    "free_mb": 18276
+  },
+  {
+    "t": 250108.061916,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 252108.64462500002,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 163,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 22,
+    "load1": 8.501953125,
+    "free_mb": 18202
+  },
+  {
+    "t": 252108.697041,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 250044.52754100002,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 3.96,
+    "mem_mb": 52
+  },
+  {
+    "t": 250044.52754100002,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 0.91,
+    "mem_mb": 284
+  },
+  {
+    "t": 250044.52754100002,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 15
+  },
+  {
+    "t": 250044.52754100002,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.24,
+    "mem_mb": 186
+  },
+  {
+    "t": 250044.52754100002,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 3.68,
+    "mem_mb": 159
+  },
+  {
+    "t": 250044.52754100002,
+    "kind": "next",
+    "cpu_pct": 1,
+    "rss_mb": 154
+  },
+  {
+    "t": 254109.08245800002,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 164,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 14,
+    "load1": 8.78173828125,
+    "free_mb": 18235
+  },
+  {
+    "t": 254109.24387500001,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 1,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 256110.338916,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 164,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 13,
+    "load1": 8.78173828125,
+    "free_mb": 18179
+  },
+  {
+    "t": 256110.40300000002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 255045.13820800002,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.77,
+    "mem_mb": 52
+  },
+  {
+    "t": 255045.13820800002,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.29,
+    "mem_mb": 284
+  },
+  {
+    "t": 255045.13820800002,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 15
+  },
+  {
+    "t": 255045.13820800002,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.29,
+    "mem_mb": 186
+  },
+  {
+    "t": 255045.13820800002,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.86,
+    "mem_mb": 159
+  },
+  {
+    "t": 255045.13820800002,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 134
+  },
+  {
+    "t": 258110.896791,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 164,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 25,
+    "load1": 8.55859375,
+    "free_mb": 18143
+  },
+  {
+    "t": 258110.941083,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 260111.841083,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 164,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 15,
+    "load1": 8.55859375,
+    "free_mb": 18096
+  },
+  {
+    "t": 260111.89037500002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 262112.08775,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 164,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 16,
+    "load1": 8.55859375,
+    "free_mb": 18035
+  },
+  {
+    "t": 262112.21841600002,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 260046.58575000003,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.26,
+    "mem_mb": 52
+  },
+  {
+    "t": 260046.58575000003,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.48,
+    "mem_mb": 284
+  },
+  {
+    "t": 260046.58575000003,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 15
+  },
+  {
+    "t": 260046.58575000003,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.02,
+    "mem_mb": 186
+  },
+  {
+    "t": 260046.58575000003,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.17,
+    "mem_mb": 159
+  },
+  {
+    "t": 260046.58575000003,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 134
+  },
+  {
+    "t": 264113.508208,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 164,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 15,
+    "load1": 8.353515625,
+    "free_mb": 18029
+  },
+  {
+    "t": 264114.664,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 266114.107875,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 164,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 14,
+    "load1": 8.353515625,
+    "free_mb": 18005
+  },
+  {
+    "t": 266114.186583,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 265046.966666,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.56,
+    "mem_mb": 52
+  },
+  {
+    "t": 265046.966666,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.17,
+    "mem_mb": 284
+  },
+  {
+    "t": 265046.966666,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 15
+  },
+  {
+    "t": 265046.966666,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0,
+    "mem_mb": 186
+  },
+  {
+    "t": 265046.966666,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.47,
+    "mem_mb": 159
+  },
+  {
+    "t": 265046.966666,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 134
+  },
+  {
+    "t": 268114.617583,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 164,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 16,
+    "load1": 8.2451171875,
+    "free_mb": 18042
+  },
+  {
+    "t": 268114.73925,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 270115.54137500003,
+    "kind": "generator",
+    "cpu_pct": 2,
+    "rss_mb": 160,
+    "loop_p99_ms": 15,
+    "loop_max_ms": 23,
+    "load1": 8.2451171875,
+    "free_mb": 18023
+  },
+  {
+    "t": 270115.592916,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 272115.75162500003,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 160,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 13,
+    "load1": 8.2451171875,
+    "free_mb": 18013
+  },
+  {
+    "t": 272115.82087500003,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 270047.37525000004,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.09,
+    "mem_mb": 52
+  },
+  {
+    "t": 270047.37525000004,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 0.61,
+    "mem_mb": 284
+  },
+  {
+    "t": 270047.37525000004,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 15
+  },
+  {
+    "t": 270047.37525000004,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0,
+    "mem_mb": 186
+  },
+  {
+    "t": 270047.37525000004,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 0.75,
+    "mem_mb": 159
+  },
+  {
+    "t": 270047.37525000004,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 134
+  },
+  {
+    "t": 274116.529375,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 160,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 28,
+    "load1": 7.82470703125,
+    "free_mb": 18001
+  },
+  {
+    "t": 274116.692208,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 276116.893208,
+    "kind": "generator",
+    "cpu_pct": 0,
+    "rss_mb": 160,
+    "loop_p99_ms": 13,
+    "loop_max_ms": 16,
+    "load1": 7.82470703125,
+    "free_mb": 17878
+  },
+  {
+    "t": 276116.965375,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 275047.149708,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.24,
+    "mem_mb": 52
+  },
+  {
+    "t": 275047.149708,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 1.03,
+    "mem_mb": 284
+  },
+  {
+    "t": 275047.149708,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 15
+  },
+  {
+    "t": 275047.149708,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.03,
+    "mem_mb": 186
+  },
+  {
+    "t": 275047.149708,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 1.39,
+    "mem_mb": 159
+  },
+  {
+    "t": 275047.149708,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 134
+  },
+  {
+    "t": 278118.123875,
+    "kind": "generator",
+    "cpu_pct": 4,
+    "rss_mb": 153,
+    "loop_p99_ms": 14,
+    "loop_max_ms": 16,
+    "load1": 7.59814453125,
+    "free_mb": 18132
+  },
+  {
+    "t": 278118.204583,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 280118.041833,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 154,
+    "loop_p99_ms": 15,
+    "loop_max_ms": 24,
+    "load1": 7.59814453125,
+    "free_mb": 18145
+  },
+  {
+    "t": 280118.09029100003,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 282119.722291,
+    "kind": "generator",
+    "cpu_pct": 1,
+    "rss_mb": 154,
+    "loop_p99_ms": 12,
+    "loop_max_ms": 16,
+    "load1": 7.59814453125,
+    "free_mb": 18096
+  },
+  {
+    "t": 282119.81675,
+    "kind": "db",
+    "max_connections": 100,
+    "total": 25,
+    "active": 0,
+    "waiting_lock": 0,
+    "by_app": {
+      "PostgREST 16.4": 11,
+      "cluster_node_realtime@127.0.0.1": 2,
+      "realtime_connect": 1,
+      "realtime_rls": 1,
+      "realtime_subscription_manager": 1,
+      "realtime_subscription_manager_pub": 4,
+      "supabase_mt_realtime": 5
+    }
+  },
+  {
+    "t": 280047.031666,
+    "kind": "container",
+    "name": "rest",
+    "cpu_pct": 0.11,
+    "mem_mb": 52
+  },
+  {
+    "t": 280047.031666,
+    "kind": "container",
+    "name": "realtime",
+    "cpu_pct": 0.96,
+    "mem_mb": 284
+  },
+  {
+    "t": 280047.031666,
+    "kind": "container",
+    "name": "auth",
+    "cpu_pct": 0,
+    "mem_mb": 15
+  },
+  {
+    "t": 280047.031666,
+    "kind": "container",
+    "name": "kong",
+    "cpu_pct": 0.12,
+    "mem_mb": 186
+  },
+  {
+    "t": 280047.031666,
+    "kind": "container",
+    "name": "db",
+    "cpu_pct": 0.8,
+    "mem_mb": 159
+  },
+  {
+    "t": 280047.031666,
+    "kind": "next",
+    "cpu_pct": 0,
+    "rss_mb": 134
+  }
+]

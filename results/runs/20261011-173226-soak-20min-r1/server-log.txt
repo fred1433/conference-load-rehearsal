@@ -1,0 +1,22 @@
+## realtime (17 matching lines, first 150)
+17:33:04.472 [info] Starting Elixir.Realtime.RateCounter for: {:channel, :subscription_errors, "realtime-dev"}
+17:35:44.341 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:35:44.341 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:35:44.343 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:40:54.711 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:40:54.727 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:40:54.742 error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+  query_timeout: 240000,
+17:45:45.375 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:45:45.375 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:45:45.377 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:45:45.397 [info] Starting Elixir.Realtime.RateCounter for: {:channel, :subscription_errors, "realtime-dev"}
+17:53:20.419 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:53:20.462 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:53:20.510 error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+  query_timeout: 240000,
+17:53:21.534 [info] Starting Elixir.Realtime.RateCounter for: {:channel, :subscription_errors, "realtime-dev"}
+
+## kong (1 matching lines, first 150)
+2026/10/11 17:53:20 [warn] 1109#0: 512 worker_connections are not enough, reusing connections
+

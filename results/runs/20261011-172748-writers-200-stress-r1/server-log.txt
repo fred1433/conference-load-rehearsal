@@ -1,0 +1,10 @@
+## realtime (5 matching lines, first 150)
+17:27:50.911 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:27:50.919 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:27:50.930 error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+  query_timeout: 240000,
+17:28:03.145 [info] Starting Elixir.Realtime.RateCounter for: {:channel, :subscription_errors, "realtime-dev"}
+
+## db (1 matching lines, first 150)
+ 2026-10-11 17:31:35.588 UTC [200] LOG:  checkpoint complete: wrote 588 buffers (3.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=59.567 s, sync=0.010 s, total=59.580 s; sync files=63, longest=0.005 s, average=0.001 s; distance=4390 kB, estimate=4390 kB; lsn=0/8FE5C00, redo lsn=0/8FB0808
+

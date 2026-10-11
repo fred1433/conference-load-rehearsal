@@ -1,0 +1,165 @@
+## realtime (8 matching lines, first 150)
+17:05:41.176 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:05:41.184 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:05:41.186 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:05:41.186 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:05:41.186 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:05:41.199 error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+  query_timeout: 240000,
+17:05:46.048 [info] Starting Elixir.Realtime.RateCounter for: {:channel, :subscription_errors, "realtime-dev"}
+
+## kong (844 matching lines, first 150)
+172.20.0.1 - - [11/Oct/2026:17:07:51 +0000] "GET /realtime/v1/websocket?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0&vsn=2.0.0 HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:51 +0000] "GET /realtime/v1/websocket?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0&vsn=2.0.0 HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:51 +0000] "GET /realtime/v1/websocket?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0&vsn=2.0.0 HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:51 +0000] "GET /realtime/v1/websocket?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0&vsn=2.0.0 HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:51 +0000] "GET /realtime/v1/websocket?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0&vsn=2.0.0 HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:51 +0000] "GET /realtime/v1/websocket?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0&vsn=2.0.0 HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:51 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:51 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:52 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:52 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:52 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:53 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:53 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:53 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:53 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:53 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:53 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:53 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+172.20.0.1 - - [11/Oct/2026:17:07:53 +0000] "POST /rest/v1/rpc/get_state HTTP/1.1" 500 42 "-" "node"
+2026/10/11 17:07:20 [warn] 1109#0: 512 worker_connections are not enough, reusing connections
+2026/10/11 17:07:21 [warn] 1109#0: 512 worker_connections are not enough, reusing connections
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:21 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:22 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:23 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+2026/10/11 17:07:24 [alert] 1109#0: 512 worker_connections are not enough
+
+## db (1 matching lines, first 150)
+ 2026-10-11 17:06:33.282 UTC [200] LOG:  checkpoint complete: wrote 578 buffers (3.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=57.972 s, sync=0.003 s, total=57.979 s; sync files=72, longest=0.002 s, average=0.001 s; distance=3851 kB, estimate=3977 kB; lsn=0/7BFB8E8, redo lsn=0/7B610C0
+

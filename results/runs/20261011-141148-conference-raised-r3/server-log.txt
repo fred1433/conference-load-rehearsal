@@ -1,0 +1,13 @@
+## realtime (8 matching lines, first 150)
+14:11:50.642 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+14:11:50.651 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+14:11:50.653 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+14:11:50.653 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+14:11:50.654 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+14:11:50.669 error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+  query_timeout: 240000,
+14:12:14.746 [info] Starting Elixir.Realtime.RateCounter for: {:channel, :subscription_errors, "realtime-dev"}
+
+## kong (1 matching lines, first 150)
+172.20.0.1 - - [11/Oct/2026:14:16:22 +0000] "PUT /realtime/v1/api/tenants/realtime-dev HTTP/1.1" 200 502 "-" "node"
+

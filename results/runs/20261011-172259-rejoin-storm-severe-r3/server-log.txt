@@ -1,0 +1,50 @@
+## realtime (40 matching lines, first 150)
+17:23:01.599 [info] Starting Elixir.Realtime.RateCounter for: {:channel, :subscription_errors, "realtime-dev"}
+17:25:01.402 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:01.765 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:04.424 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:04.773 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:08.440 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:08.783 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:15.450 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:15.791 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:27.459 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:27.798 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:39.469 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:39.807 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:43.308 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:25:43.308 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:25:43.308 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:25:51.484 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:25:51.815 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:26:03.498 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:26:03.823 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:26:15.513 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:26:15.832 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:26:27.521 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:26:27.843 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:26:39.533 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:26:39.854 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:26:51.552 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:26:51.863 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:27:03.569 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:27:03.880 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:27:15.583 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:27:15.891 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:27:27.595 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:27:27.900 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:27:39.607 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:27:39.911 project=realtime-dev external_id=realtime-dev error_code=ConnectionRateLimitReached iss=supabase-demo exp=1983812996 [error] ConnectionRateLimitReached: Too many connected users
+17:27:50.911 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:27:50.919 project=realtime-dev external_id=realtime-dev error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+17:27:50.930 error_code=DatabaseIpVersionIsIpv4 [warning] DatabaseIpVersionIsIpv4: Tenant database host supabase_db_rehearsal resolved to an IPv4 address
+  query_timeout: 240000,
+
+## kong (3 matching lines, first 150)
+172.20.0.1 - - [11/Oct/2026:17:27:43 +0000] "PUT /realtime/v1/api/tenants/realtime-dev HTTP/1.1" 200 501 "-" "node"
+2026/10/11 17:25:49 [warn] 1109#0: 512 worker_connections are not enough, reusing connections
+2026/10/11 17:25:51 [warn] 1109#0: 512 worker_connections are not enough, reusing connections
+
+## db (1 matching lines, first 150)
+ 2026-10-11 17:26:32.932 UTC [200] LOG:  checkpoint complete: wrote 563 buffers (3.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=56.930 s, sync=0.009 s, total=56.945 s; sync files=64, longest=0.002 s, average=0.001 s; distance=4047 kB, estimate=4173 kB; lsn=0/8C62550, redo lsn=0/8B66C48
+

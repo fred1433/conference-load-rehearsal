@@ -1,0 +1,184 @@
+{
+  "measured_at": "2026-10-11T18:11:28.083Z",
+  "auth_image": "public.ecr.aws/supabase/gotrue:v2.197.0",
+  "default_local_check": {
+    "requests": 40,
+    "statuses": {
+      "200": 40
+    }
+  },
+  "limited_container_env": [
+    "GOTRUE_JWT_EXP=3600",
+    "GOTRUE_RATE_LIMIT_OTP=30",
+    "GOTRUE_RATE_LIMIT_ANONYMOUS_USERS=30",
+    "GOTRUE_RATE_LIMIT_TOKEN_REFRESH=150",
+    "GOTRUE_RATE_LIMIT_WEB3=30",
+    "GOTRUE_RATE_LIMIT_VERIFY=30",
+    "GOTRUE_EXTERNAL_ANONYMOUS_USERS_ENABLED=true",
+    "GOTRUE_RATE_LIMIT_SMS_SENT=30",
+    "GOTRUE_RATE_LIMIT_EMAIL_SENT=360000",
+    "GOTRUE_RATE_LIMIT_HEADER=X-Venue-Ip"
+  ],
+  "header": "X-Venue-Ip",
+  "note": "Requests go straight to the Auth container (no gateway). The script stands in for the trusted proxy that sets the rate-limit header.",
+  "results": [
+    {
+      "path": "fresh-anonymous",
+      "grouping": "one-venue-ip",
+      "arrivals": 200,
+      "window_s": 120,
+      "ok": 30,
+      "rate_limited": 170,
+      "statuses": {
+        "200": 30,
+        "429 over_request_rate_limit": 170
+      },
+      "first_429_at_ms": 21625,
+      "ok_latency": {
+        "p50_ms": 16,
+        "p95_ms": 29
+      },
+      "ok_per_30s": [
+        30,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "fresh-email",
+      "grouping": "one-venue-ip",
+      "arrivals": 200,
+      "window_s": 120,
+      "ok": 41,
+      "rate_limited": 159,
+      "statuses": {
+        "200": 41,
+        "429 over_request_rate_limit": 159
+      },
+      "first_429_at_ms": 22845,
+      "ok_latency": {
+        "p50_ms": 108,
+        "p95_ms": 122
+      },
+      "ok_per_30s": [
+        32,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "path": "login",
+      "grouping": "one-venue-ip",
+      "arrivals": 200,
+      "window_s": 120,
+      "ok": 89,
+      "rate_limited": 111,
+      "statuses": {
+        "200": 89,
+        "429 over_request_rate_limit": 111
+      },
+      "first_429_at_ms": 35190,
+      "ok_latency": {
+        "p50_ms": 104,
+        "p95_ms": 119
+      },
+      "ok_per_30s": [
+        40,
+        19,
+        15,
+        15
+      ]
+    },
+    {
+      "path": "refresh",
+      "grouping": "one-venue-ip",
+      "arrivals": 200,
+      "window_s": 120,
+      "ok": 89,
+      "rate_limited": 111,
+      "statuses": {
+        "200": 89,
+        "429 over_request_rate_limit": 111
+      },
+      "first_429_at_ms": 35190,
+      "ok_latency": {
+        "p50_ms": 54,
+        "p95_ms": 69
+      },
+      "ok_per_30s": [
+        40,
+        19,
+        15,
+        15
+      ]
+    },
+    {
+      "path": "reuse",
+      "grouping": "one-venue-ip",
+      "arrivals": 200,
+      "window_s": 120,
+      "ok": 200,
+      "rate_limited": 0,
+      "statuses": {
+        "200": 200
+      },
+      "first_429_at_ms": null,
+      "ok_latency": {
+        "p50_ms": 33,
+        "p95_ms": 41
+      },
+      "ok_per_30s": [
+        40,
+        47,
+        58,
+        55
+      ]
+    },
+    {
+      "path": "fresh-anonymous",
+      "grouping": "per-device-ip",
+      "arrivals": 200,
+      "window_s": 120,
+      "ok": 200,
+      "rate_limited": 0,
+      "statuses": {
+        "200": 200
+      },
+      "first_429_at_ms": null,
+      "ok_latency": {
+        "p50_ms": 17,
+        "p95_ms": 25
+      },
+      "ok_per_30s": [
+        40,
+        47,
+        58,
+        55
+      ]
+    },
+    {
+      "path": "login",
+      "grouping": "per-device-ip",
+      "arrivals": 200,
+      "window_s": 120,
+      "ok": 200,
+      "rate_limited": 0,
+      "statuses": {
+        "200": 200
+      },
+      "first_429_at_ms": null,
+      "ok_latency": {
+        "p50_ms": 104,
+        "p95_ms": 150
+      },
+      "ok_per_30s": [
+        40,
+        47,
+        58,
+        55
+      ]
+    }
+  ]
+}

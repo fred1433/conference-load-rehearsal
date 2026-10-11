@@ -1,0 +1,29 @@
+{
+  "name": "conference-load-rehearsal",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "env": "node rehearse/env.mjs",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1 -p 3000",
+    "setup": "node rehearse/setup.mjs",
+    "rehearse": "node rehearse/run.mjs",
+    "auth-arrival": "node rehearse/auth-arrival.mjs",
+    "matrix": "node rehearse/matrix.mjs",
+    "report": "node rehearse/report.mjs",
+    "test": "node --test tests/"
+  },
+  "dependencies": {
+    "@supabase/realtime-js": "2.117.3",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "playwright": "1.64.0",
+    "postgres": "3.4.9"
+  }
+}

@@ -1,0 +1,7 @@
+## realtime (2 matching lines, first 150)
+14:17:17.688 [info] Starting Elixir.Realtime.RateCounter for: {:channel, :subscription_errors, "realtime-dev"}
+14:21:10.335 [info] Starting Elixir.Realtime.RateCounter for: {:channel, :authorization_errors, "realtime-dev"}
+
+## kong (1 matching lines, first 150)
+172.20.0.1 - - [11/Oct/2026:14:21:02 +0000] "PUT /realtime/v1/api/tenants/realtime-dev HTTP/1.1" 200 501 "-" "node"
+
