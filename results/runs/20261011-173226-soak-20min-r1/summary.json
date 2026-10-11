@@ -1785,7 +1785,165 @@
           "kind": "refresh"
         }
       ]
-    }
+    },
+    "opens": [
+      {
+        "round": 1,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 2,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 3,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 4,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 5,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 6,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 7,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 8,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 9,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 10,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 11,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 12,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 13,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 14,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 15,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 16,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 17,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 18,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 19,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 20,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 21,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 22,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 23,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 24,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 25,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 26,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      }
+    ]
   },
   "db": {
     "decisions": 1040,

@@ -707,7 +707,21 @@
           "round": 2
         }
       ]
-    }
+    },
+    "opens": [
+      {
+        "round": 1,
+        "ok": false,
+        "attempts": 3,
+        "error": "upstream_unreachable"
+      },
+      {
+        "round": 2,
+        "ok": false,
+        "attempts": 3,
+        "error": "upstream_unreachable"
+      }
+    ]
   },
   "db": {
     "decisions": 0,

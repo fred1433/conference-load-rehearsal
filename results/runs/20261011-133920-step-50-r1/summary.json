@@ -600,7 +600,17 @@
           "round": 2
         }
       ]
-    }
+    },
+    "opens": [
+      {
+        "round": 1,
+        "ok": true
+      },
+      {
+        "round": 2,
+        "ok": true
+      }
+    ]
   },
   "db": {
     "decisions": 20,

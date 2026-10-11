@@ -1152,7 +1152,27 @@
           "round": 3
         }
       ]
-    }
+    },
+    "opens": [
+      {
+        "round": 1,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 2,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 3,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      }
+    ]
   },
   "db": {
     "decisions": 120,

@@ -171,10 +171,7 @@
           "p95_ms": "never",
           "max_ms": "never"
         },
-        "via": {
-          "realtime": 2,
-          "recover": 200
-        },
+        "via": {},
         "cut": false
       },
       {
@@ -185,17 +182,14 @@
         "final_version": 1,
         "scored": null,
         "intended_recipients": 202,
-        "current_within_5s": 202,
-        "missing_at_5s": 0,
+        "current_within_5s": 0,
+        "missing_at_5s": 202,
         "delivery": {
-          "p50_ms": 0,
-          "p95_ms": 0,
-          "max_ms": 0
+          "p50_ms": "never",
+          "p95_ms": "never",
+          "max_ms": "never"
         },
-        "via": {
-          "realtime": 2,
-          "recover": 200
-        },
+        "via": {},
         "cut": false
       }
     ],
@@ -1153,7 +1147,27 @@
           "kind": "restore"
         }
       ]
-    }
+    },
+    "opens": [
+      {
+        "round": 1,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 2,
+        "ok": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "round": 3,
+        "ok": false,
+        "attempts": 3,
+        "error": "upstream_unreachable"
+      }
+    ]
   },
   "db": {
     "decisions": 40,

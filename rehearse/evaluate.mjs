@@ -4,6 +4,14 @@ import { pct, ms } from './common.mjs';
 
 const stats = (arr) => ({ p50_ms: ms(pct(arr, 0.5)), p95_ms: ms(pct(arr, 0.95)), max_ms: ms(pct(arr, 1)) });
 
+// A round whose close was refused or failed published nothing new: no screen
+// can be "current" on it, even if every screen still shows the previous result
+// (receipts at or above a stale final_version would otherwise count as delivered).
+export function closeFailedCountsAsMissing(r) {
+  if (r.close_ok) return r;
+  return { ...r, current_within_5s: 0, missing_at_5s: r.intended_recipients, delivery: { p50_ms: 'never', p95_ms: 'never', max_ms: 'never' }, via: {} };
+}
+
 export function evaluate({ cfg, devices, opens, closes, cut, refreshAt, clock, db, browsers, samples, endAt }) {
   const participants = devices.filter((d) => d.role === 'participant');
   const subscribers = devices.filter((d) => d.subscriber);
@@ -63,13 +71,13 @@ export function evaluate({ cfg, devices, opens, closes, cut, refreshAt, clock, d
     });
     const via = {};
     for (const d of subscribers) { const r = d.receipts.find((x) => x.version >= v); if (r) via[r.via] = (via[r.via] || 0) + 1; }
-    return {
+    return closeFailedCountsAsMissing({
       round: c.round, close_ok: c.ok, close_ms: ms(c.end - c.start), close_status: c.status, final_version: v, scored: c.scored ?? null,
       intended_recipients: subscribers.length,
       current_within_5s: lat.filter((x) => x <= 5000).length,
       missing_at_5s: lat.filter((x) => x > 5000).length,
       delivery: stats(lat), via, cut: c.round === cutRound,
-    };
+    });
   });
   const score_check_ok = db.expected.every((e) => {
     const s = db.scores.find((x) => x.team === e.team);
@@ -176,5 +184,6 @@ export function evaluate({ cfg, devices, opens, closes, cut, refreshAt, clock, d
   }
   if (refreshAt != null) timeline.markers.push({ t: refreshAt, kind: 'refresh' });
 
-  return { joined, submitted, rounds, score_check_ok, recovery, refresh, browsers: browserOut, targets, generator, host, timeline };
+  const opened = opens.map((o) => ({ round: o.round, ok: o.ok, attempts: o.attempts, error: o.error }));
+  return { joined, submitted, opens: opened, rounds, score_check_ok, recovery, refresh, browsers: browserOut, targets, generator, host, timeline };
 }

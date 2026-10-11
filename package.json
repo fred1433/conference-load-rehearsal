@@ -14,7 +14,7 @@
     "auth-arrival": "node rehearse/auth-arrival.mjs",
     "matrix": "node rehearse/matrix.mjs",
     "report": "node rehearse/report.mjs",
-    "test": "node --test tests/"
+    "test": "node --test --test-concurrency=1 tests/"
   },
   "dependencies": {
     "@supabase/realtime-js": "2.117.3",
